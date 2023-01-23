@@ -7,6 +7,8 @@ TagManager:
   - Left Hand
   - Right Hand
   - Brazier
+  - Lever
+  - Lever Moveable
   layers:
   - Default
   - TransparentFX
