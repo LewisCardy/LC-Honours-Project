@@ -2912,6 +2912,7 @@ MonoBehaviour:
   handAnimator: {fileID: 501195953868150869}
   isLeft: 0
   isRight: 0
+  isFloating: 0
 --- !u!1 &536017827033220789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +2999,7 @@ MonoBehaviour:
   handAnimator: {fileID: 5303381843689267331}
   isLeft: 0
   isRight: 0
+  isFloating: 0
 --- !u!1 &536017827449287733
 GameObject:
   m_ObjectHideFlags: 0
@@ -4190,6 +4192,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992498069125768904, guid: 3cccf44cc6f10024ebe6eabd20918c51,
+        type: 3}
+      propertyPath: lerpFactor
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4992498069125768911, guid: 3cccf44cc6f10024ebe6eabd20918c51,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cccf44cc6f10024ebe6eabd20918c51, type: 3}

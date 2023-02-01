@@ -12,11 +12,7 @@ public class AnimateHandOnInput : MonoBehaviour
 
     public bool isLeft;
     public bool isRight;
-    void Start()
-    {
-        
-    }
-
+    public bool isFloating;
     void Update()
     {
         if(isLeft){
@@ -31,6 +27,12 @@ public class AnimateHandOnInput : MonoBehaviour
 
             float rightGripValue = gripAnimationAction.action.ReadValue<float>();
             handAnimator.SetFloat("RightGrip", rightGripValue);
+        } else if (isFloating){
+            float triggerValue = pinchAnimationAction.action.ReadValue<float>();
+            handAnimator.SetFloat("Trigger", triggerValue);
+
+            float gripValue = gripAnimationAction.action.ReadValue<float>();
+            handAnimator.SetFloat("Grip", gripValue);
         }
     }
 }
