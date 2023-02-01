@@ -9,7 +9,7 @@ public class ClimbingProvider : LocomotionProvider
 {
     [SerializeField] private CharacterController characterController;
     private bool isClimbing = false;
-    private List<VelocityContainer> activateVelocities = new List<VelocityContainer>();
+    private List<VelocityContainer> activeVelocities = new List<VelocityContainer>();
     protected override void Awake()
     {
         base.Awake();
@@ -18,52 +18,52 @@ public class ClimbingProvider : LocomotionProvider
 
     private void FindCharacterController()
     {
-        if(!characterController){
+        if(!characterController)
             characterController = system.xrOrigin.GetComponent<CharacterController>();
-        }
+        
     }
 
     public void AddProvider(VelocityContainer provider)
     {
-        if(activateVelocities.Contains(provider)){
-            activateVelocities.Add(provider);
-        }
+        if(!activeVelocities.Contains(provider))
+            activeVelocities.Add(provider);
+        
     }
 
     public void RemoveProvider(VelocityContainer provider)
     {
-        if(activateVelocities.Contains(provider)){
-            activateVelocities.Remove(provider);
-        } 
+        if(activeVelocities.Contains(provider))
+            activeVelocities.Remove(provider);
+        
     }
 
     private void Update()
     {
         TryBeginClimb();
-        if(isClimbing){
+        if(isClimbing)
             ApplyVelocity();
-        }
+        
         
         TryEndClimb();
     }
 
     private void TryBeginClimb()
     {
-        if(CanClimb() && BeginLocomotion()){
+        if(CanClimb() && BeginLocomotion())
             isClimbing = true;
-        }
+        
     }
 
     private void TryEndClimb()
     {
-        if(!CanClimb() && EndLocomotion()){
+        if(!CanClimb() && EndLocomotion())
             isClimbing = false;
-        }
+        
     }
 
     private bool CanClimb()
     {
-        return activateVelocities.Count != 0;
+        return activeVelocities.Count != 0;
     }
 
     private void ApplyVelocity()
@@ -82,9 +82,9 @@ public class ClimbingProvider : LocomotionProvider
     private Vector3 CollectControllerVelocity()
     {
         Vector3 totalVelocity = Vector3.zero;
-        foreach(VelocityContainer container in activateVelocities){
-            totalVelocity += container.velocity;
-        }
+        foreach(VelocityContainer container in activeVelocities)
+            totalVelocity += container.Velocity;
+        
         return totalVelocity;
     }
 }

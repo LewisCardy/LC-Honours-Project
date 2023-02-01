@@ -13,9 +13,8 @@ public class ClimbAnchor : XRBaseInteractable
     }
 
     private void FindClimbingProvider(){
-        if(!climbingProvider){
-            climbingProvider = FindObjectOfType<ClimbingProvider>();
-        }    
+        if(!climbingProvider)
+            climbingProvider = FindObjectOfType<ClimbingProvider>();  
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
@@ -41,11 +40,11 @@ public class ClimbAnchor : XRBaseInteractable
     }
      public override bool IsHoverableBy(IXRHoverInteractor interactor)
     {
-        return base.IsHoverableBy(interactor) && interactor is XRBaseInteractor;
+        return base.IsHoverableBy(interactor) && interactor is XRDirectInteractor;
     }
 
     public override bool IsSelectableBy(IXRSelectInteractor interactor)
     {
-        return base.IsSelectableBy(interactor) && interactor is XRBaseInteractor;
+        return base.IsSelectableBy(interactor) && interactor is XRDirectInteractor;
     }
 }
