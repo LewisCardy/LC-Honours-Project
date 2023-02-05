@@ -21,6 +21,7 @@ public class AnimateHandOnInput : MonoBehaviour
 
             float leftGripValue = gripAnimationAction.action.ReadValue<float>();
             handAnimator.SetFloat("LeftGrip", leftGripValue);
+            
         } else if(isRight){
             float rightTriggerValue = pinchAnimationAction.action.ReadValue<float>();
             handAnimator.SetFloat("RightTrigger", rightTriggerValue);

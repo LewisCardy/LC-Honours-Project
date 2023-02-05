@@ -9,6 +9,7 @@ TagManager:
   - Brazier
   - Lever
   - Lever Moveable
+  - Climbable
   layers:
   - Default
   - TransparentFX
