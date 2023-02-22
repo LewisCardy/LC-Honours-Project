@@ -6104,6 +6104,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1519670059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7966705755325823802, guid: 297f48ff7f98c0e43aacee70654316d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 7966705755230120755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1611604898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9476,6 +9482,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6516249023521356441, guid: 3cccf44cc6f10024ebe6eabd20918c51,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cccf44cc6f10024ebe6eabd20918c51, type: 3}
 --- !u!137 &5303381843685088835
@@ -10644,6 +10655,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2040491384, guid: a9292e99d3271e74384e55898b81d0cb, type: 3}
+      propertyPath: lever
+      value: 
+      objectReference: {fileID: 1519670059}
     - target: {fileID: 1794017646969309778, guid: a9292e99d3271e74384e55898b81d0cb,
         type: 3}
       propertyPath: m_RootOrder
