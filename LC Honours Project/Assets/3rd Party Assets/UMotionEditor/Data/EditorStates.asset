@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GeneralStates:
     LoadedProjectGUID:
-      valueInternal: 
+      valueInternal: 038ef9193add2b14ebf4a18d76d9686a
     RecentlyOpenedProjectPath:
-      valueInternal: Assets\Animation
+      valueInternal: Assets\Animation\Full Body Animation\Adventurer
     RecentlyOpenedProjectGUIDsList:
+    - valueInternal: 038ef9193add2b14ebf4a18d76d9686a
     - valueInternal: 0ece06a64f19b1340a213808eb67a414
     - valueInternal: b888f1a2b75bf404f88b715e326a32ae
