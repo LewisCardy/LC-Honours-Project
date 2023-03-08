@@ -44,3 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eec181a7a54ed9498706a88fb67eaae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultPlayerRig: {fileID: 4244733175424192096, guid: ad17f961813d0264e8622da97a36655e,
+    type: 3}
+  selectMenu: {fileID: 0}
+  mainMenu: {fileID: 0}
+  playerRigs:
+  - {fileID: 4159953733187737830, guid: 1af4bd5a0e831e04386fccb654d3bd7f, type: 3}
+  - {fileID: 4244733175424192096, guid: ad17f961813d0264e8622da97a36655e, type: 3}
+  - {fileID: 4159953733187737830, guid: 1af4bd5a0e831e04386fccb654d3bd7f, type: 3}
+  - {fileID: 4244733175424192096, guid: ad17f961813d0264e8622da97a36655e, type: 3}
+  - {fileID: 1909942011952083584, guid: df8f5681c3905ef45a8758c43cc439f8, type: 3}
+  - {fileID: 5760283202053600330, guid: 0bccb3c6d6a7edd43b37dcedcc311c45, type: 3}

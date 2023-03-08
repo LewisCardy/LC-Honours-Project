@@ -6,66 +6,46 @@ using UnityEngine.SceneManagement;
 //The game manager
 public class GameManager : MonoBehaviour
 {
-    GameObject playerRig; //the avatar
-    string rigName;
-    public GameObject defaultPlayerRig;
-    public GameObject selectMenu;
-    public GameObject mainMenu;
+    //GameObject playerRig;
+    string currentScene;
+    string playerRigName;
 
-    public GameObject[] playerRigs; //array of the playable rigs in the scene
-    public void LoadScene(string sceneName){ //loads a scene based on the name given
-        Scene newScene = SceneManager.GetSceneByName(sceneName);
-        SceneManager.LoadScene(sceneName);
+    GameObject playerRigs;
+    GameObject playerRig;
+    void Start(){
+        playerRigs = GameObject.Find("PlayerRigs");
+        DontDestroyOnLoad(gameObject);
+        ChangePlayerRig();
+        deactivateRigs();
     }
-
-    public void ShowPlayerModelSelect(){ //shows the player select menu
-        selectMenu.SetActive(true);
-        mainMenu.SetActive(false);
+    public void SetPlayerRigName(string name){
+       playerRigName = name;
     }
-
-    public void setPlayerRig(string selectedName){ //sets the current player rig
-        rigName = selectedName;
-    }
-
-    void Start(){ //defaults the player rig
-        playerRig = defaultPlayerRig;
-        playerRig.SetActive(true);
-        rigName = playerRig.name;
+    public void SetScene(string scene){
+        currentScene = scene;
     }
     void Update(){
-        playerRigHandler(); //handles the changing od player rigs
-        //playerRig.SetActive(true);
-        Debug.Log(playerRig);
+        Debug.Log(playerRigName);
+        if(playerRigs == null){
+            playerRigs = GameObject.Find("PlayerRigs");
+            deactivateRigs();
+        }
     }
 
-    IEnumerator setNewRig(GameObject oldRig, GameObject newRig){ //sets a new rig for the player
-        oldRig.SetActive(false);
-        playerRig = newRig;
-        playerRig.SetActive(true);
-        yield return new WaitForSeconds(1);
+    void ChangePlayerRig(){
+        playerRig = GameObject.Find(playerRigName);
     }
 
-    void playerRigHandler(){ //handles the changing of the rigs
-        switch (rigName) //switch statement to change the player rig based on the name sent from the select meny
+    public void deactivateRigs(){
+        for (int i = 0; i < playerRigs.transform.childCount; i++)
         {
-            case "Skeleton Body": //if the skeleton body name was sent then set the new rig equal to that of the skeleton body within the scene so it would be position 0 in the rigs array
-               StartCoroutine(setNewRig(playerRig ,playerRigs[0]));
-                break;
-            case "Skeleton Hands":
-                StartCoroutine(setNewRig(playerRigs[0], playerRigs[1]));
-                break;
-            case "Mage Body":
-                StartCoroutine(setNewRig(playerRigs[1], playerRigs[2]));
-                break;
-            case "Mage Hands":
-                StartCoroutine(setNewRig(playerRigs[2], playerRigs[3]));
-                break;
-            case "Adventurer Body":
-                StartCoroutine(setNewRig(playerRigs[3], playerRigs[4]));
-                break;
-            case "Adventurer Hands":
-                StartCoroutine(setNewRig(playerRigs[4], playerRigs[5]));
-                break;
+            var childRig = playerRigs.transform.GetChild(i).gameObject;
+            if(childRig.name == playerRigName){
+                childRig.SetActive(true);
+            } else {
+                childRig.SetActive(false);
+            }
+            
         }
     }
 }
