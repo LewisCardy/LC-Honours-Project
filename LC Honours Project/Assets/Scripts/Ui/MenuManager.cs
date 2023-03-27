@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour
 
     void Start(){
         gameManager.SetPlayerRigName(defaultRig);
-        gameManager.deactivateRigs();
+        gameManager.DeactivateRigs();
     }
     public void onStartGame(){
         

@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     //GameObject playerRig;
-    string currentScene;
-    string playerRigName;
+    private string currentScene;
+    private string playerRigName;
+
+    public int keysCollected;
 
     GameObject playerRigs;
     GameObject playerRig;
@@ -16,7 +18,7 @@ public class GameManager : MonoBehaviour
         playerRigs = GameObject.Find("PlayerRigs");
         DontDestroyOnLoad(gameObject);
         ChangePlayerRig();
-        deactivateRigs();
+        DeactivateRigs();
     }
     public void SetPlayerRigName(string name){
        playerRigName = name;
@@ -28,7 +30,13 @@ public class GameManager : MonoBehaviour
         Debug.Log(playerRigName);
         if(playerRigs == null){
             playerRigs = GameObject.Find("PlayerRigs");
-            deactivateRigs();
+            DeactivateRigs();
+        }
+        if(currentScene == "Credits Scene"){
+            GameObject scoreTextObj = GameObject.Find("/UI Wall/Menu Canvas/CreditsMenu/txtNoKeys");
+            Debug.Log("HELLO" + scoreTextObj.name);
+            //TMPro.TMP_Text scoreText = scoreTextObj.GetComponent<TMPro.TextMeshProUGUI>();
+            //scoreText.text = keysCollected.ToString();
         }
     }
 
@@ -36,7 +44,7 @@ public class GameManager : MonoBehaviour
         playerRig = GameObject.Find(playerRigName);
     }
 
-    public void deactivateRigs(){
+    public void DeactivateRigs(){
         for (int i = 0; i < playerRigs.transform.childCount; i++)
         {
             var childRig = playerRigs.transform.GetChild(i).gameObject;
@@ -47,5 +55,13 @@ public class GameManager : MonoBehaviour
             }
             
         }
+    }
+
+    public void CollectKey(){
+        keysCollected ++;
+    }
+
+    public void EndGame(){
+        Application.Quit();
     }
 }
