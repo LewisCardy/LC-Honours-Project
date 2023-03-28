@@ -37,9 +37,6 @@ public class MenuManager : MonoBehaviour
         gameManager.SetPlayerRigName(defaultRig);
         gameManager.DeactivateRigs();
     }
-    public void onStartGame(){
-        
-    }
     void playerRigHandler(){ //handles the changing of the rigs
         switch (rigName) //switch statement to change the player rig based on the name sent from the select meny
         {

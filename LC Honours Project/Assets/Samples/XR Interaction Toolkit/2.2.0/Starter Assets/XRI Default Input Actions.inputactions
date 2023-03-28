@@ -1453,6 +1453,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Screenshot",
+            "id": "dcf324ef-38a7-469d-9814-01b7ea50d56c",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "8d0040ff-a892-4566-a2f4-8cf1b992e2ed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4d3d00a5-78b5-469d-ae34-0c05ca54822a",
+                    "path": "<Keyboard>/f12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

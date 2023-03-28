@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.InputSystem;
 //The game manager
 public class GameManager : MonoBehaviour
 {
     //GameObject playerRig;
     private string currentScene;
     private string playerRigName;
+    public InputActionReference screenshotKey;
 
-    public int keysCollected;
+    public int keysCollected = 0;
 
     GameObject playerRigs;
     GameObject playerRig;
@@ -19,6 +20,11 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         ChangePlayerRig();
         DeactivateRigs();
+    }
+    public void LoadScene(string sceneName){ //loads a scene based on the name given
+        Scene newScene = SceneManager.GetSceneByName(sceneName);
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+        SetScene(sceneName);
     }
     public void SetPlayerRigName(string name){
        playerRigName = name;
@@ -32,12 +38,10 @@ public class GameManager : MonoBehaviour
             playerRigs = GameObject.Find("PlayerRigs");
             DeactivateRigs();
         }
-        if(currentScene == "Credits Scene"){
-            GameObject scoreTextObj = GameObject.Find("/UI Wall/Menu Canvas/CreditsMenu/txtNoKeys");
-            Debug.Log("HELLO" + scoreTextObj.name);
-            //TMPro.TMP_Text scoreText = scoreTextObj.GetComponent<TMPro.TextMeshProUGUI>();
-            //scoreText.text = keysCollected.ToString();
-        }
+
+        if(screenshotKey.action.WasPressedThisFrame()){ //screenshot functionality
+            ScreenCapture.CaptureScreenshot("Screenshot1.png", 4);
+        };
     }
 
     void ChangePlayerRig(){
@@ -57,11 +61,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void CollectKey(){
+    public void CollectKey(){ //adds key to tally
         keysCollected ++;
     }
 
-    public void EndGame(){
+    public void EndGame(){ //ends the game
         Application.Quit();
     }
 }
