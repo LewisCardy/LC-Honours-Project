@@ -1191,7 +1191,7 @@ PrefabInstance:
     - target: {fileID: 4159953733187737830, guid: 1af4bd5a0e831e04386fccb654d3bd7f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4159953733187737831, guid: 1af4bd5a0e831e04386fccb654d3bd7f,
         type: 3}
@@ -17186,6 +17186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrisonerBodyRig
       objectReference: {fileID: 0}
+    - target: {fileID: 4649554190062682551, guid: 169ef7cc908aace44a41b0b94c37dc71,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169ef7cc908aace44a41b0b94c37dc71, type: 3}
 --- !u!1 &4664982521365048688
@@ -23803,6 +23808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Key Collectible
+      objectReference: {fileID: 0}
+    - target: {fileID: 7105838875950102149, guid: faf0e4d865c60624b90131d6a3664d28,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf0e4d865c60624b90131d6a3664d28, type: 3}
