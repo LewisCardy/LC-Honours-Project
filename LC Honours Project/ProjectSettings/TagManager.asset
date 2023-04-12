@@ -10,6 +10,7 @@ TagManager:
   - Lever
   - Lever Moveable
   - Climbable
+  - Torch
   layers:
   - Default
   - TransparentFX

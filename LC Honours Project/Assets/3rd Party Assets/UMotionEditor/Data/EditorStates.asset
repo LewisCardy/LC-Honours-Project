@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GeneralStates:
     LoadedProjectGUID:
-      valueInternal: 
+      valueInternal: b888f1a2b75bf404f88b715e326a32ae
     RecentlyOpenedProjectPath:
-      valueInternal: Assets\Animation\Full Body Animation\Prisoner
+      valueInternal: Assets\Animation
     RecentlyOpenedProjectGUIDsList:
+    - valueInternal: b888f1a2b75bf404f88b715e326a32ae
     - valueInternal: 2aca1f5ffa88b4d4a875374a5260d5eb
     - valueInternal: 038ef9193add2b14ebf4a18d76d9686a
     - valueInternal: f3b3ceb7258c0bf4eae8d89970703277
     - valueInternal: 0ece06a64f19b1340a213808eb67a414
-    - valueInternal: b888f1a2b75bf404f88b715e326a32ae

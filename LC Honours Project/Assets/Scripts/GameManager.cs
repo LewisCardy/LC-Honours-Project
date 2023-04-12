@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         currentScene = scene;
     }
     void Update(){
-        Debug.Log(playerRigName);
+        //Debug.Log(playerRigName);
         if(playerRigs == null){
             playerRigs = GameObject.Find("PlayerRigs");
             DeactivateRigs();
@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         if(screenshotKey.action.WasPressedThisFrame()){ //screenshot functionality
             ScreenCapture.CaptureScreenshot("Screenshot1.png", 4);
         };
+        //Debug.Log("KEYS COLLECTED " + keysCollected);
     }
 
     void ChangePlayerRig(){
