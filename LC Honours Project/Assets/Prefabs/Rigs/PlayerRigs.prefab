@@ -54,6 +54,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4159953732351149208, guid: 1af4bd5a0e831e04386fccb654d3bd7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4159953733187737830, guid: 1af4bd5a0e831e04386fccb654d3bd7f,
         type: 3}
       propertyPath: m_Name
@@ -63,6 +68,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159953733187737830, guid: 1af4bd5a0e831e04386fccb654d3bd7f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4159953733187737831, guid: 1af4bd5a0e831e04386fccb654d3bd7f,
         type: 3}
@@ -164,6 +174,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5760283202053600330, guid: 0bccb3c6d6a7edd43b37dcedcc311c45,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5760283202053600331, guid: 0bccb3c6d6a7edd43b37dcedcc311c45,
         type: 3}
       propertyPath: m_RootOrder
@@ -219,6 +234,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5760283202965153844, guid: 0bccb3c6d6a7edd43b37dcedcc311c45,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8174948222641827060, guid: 0bccb3c6d6a7edd43b37dcedcc311c45,
         type: 3}
       propertyPath: m_InteractionManager
@@ -258,6 +278,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4244733173974913566, guid: ad17f961813d0264e8622da97a36655e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4244733175424192096, guid: ad17f961813d0264e8622da97a36655e,
         type: 3}
       propertyPath: m_Name
@@ -267,6 +292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244733175424192096, guid: ad17f961813d0264e8622da97a36655e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4244733175424192097, guid: ad17f961813d0264e8622da97a36655e,
         type: 3}
@@ -343,6 +373,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4751779283958169753}
     m_Modifications:
+    - target: {fileID: 4649554188925944205, guid: 169ef7cc908aace44a41b0b94c37dc71,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4649554189800012618, guid: 169ef7cc908aace44a41b0b94c37dc71,
         type: 3}
       propertyPath: m_InteractionManager
@@ -413,6 +448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrisonerBodyRig
       objectReference: {fileID: 0}
+    - target: {fileID: 4649554190062682551, guid: 169ef7cc908aace44a41b0b94c37dc71,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4649554190840320520, guid: 169ef7cc908aace44a41b0b94c37dc71,
         type: 3}
       propertyPath: m_InteractionManager
@@ -443,6 +483,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1909942010636234494, guid: df8f5681c3905ef45a8758c43cc439f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1909942011952083584, guid: df8f5681c3905ef45a8758c43cc439f8,
         type: 3}
       propertyPath: m_Name
@@ -452,6 +497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1909942011952083584, guid: df8f5681c3905ef45a8758c43cc439f8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1909942011952083585, guid: df8f5681c3905ef45a8758c43cc439f8,
         type: 3}
@@ -543,6 +593,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4751779283958169753}
     m_Modifications:
+    - target: {fileID: 825243531406087059, guid: 8d998be91a83b9a4f832b53668214c27,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 825243532113006572, guid: 8d998be91a83b9a4f832b53668214c27,
         type: 3}
       propertyPath: m_RootOrder
@@ -602,6 +657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MageHandsRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 825243532113006573, guid: 8d998be91a83b9a4f832b53668214c27,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d998be91a83b9a4f832b53668214c27, type: 3}

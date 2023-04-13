@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 8174948222641827023}
   m_Layer: 0
   m_Name: XR Origin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2154,6 +2154,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7333708462624522980}
     m_Modifications:
+    - target: {fileID: -2340217614393391263, guid: 7aa5502c4127d994ea655360aec4f918,
+        type: 3}
+      propertyPath: handAnimator
+      value: 
+      objectReference: {fileID: 3281205551975287446}
     - target: {fileID: 4841743390562929302, guid: 7aa5502c4127d994ea655360aec4f918,
         type: 3}
       propertyPath: m_Name
@@ -2219,6 +2224,12 @@ PrefabInstance:
 --- !u!4 &2793075902818717741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5222631142920359980, guid: 7aa5502c4127d994ea655360aec4f918,
+    type: 3}
+  m_PrefabInstance: {fileID: 7978264070000181249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3281205551975287446 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4841743390562929303, guid: 7aa5502c4127d994ea655360aec4f918,
     type: 3}
   m_PrefabInstance: {fileID: 7978264070000181249}
   m_PrefabAsset: {fileID: 0}
